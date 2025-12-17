@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
 
 // Rutas API
-const ticketsRoutes = require("./routes/tickets");
+const ticketsRoutes = require(".Routes/tickets.js");
 app.use("/api/tickets", ticketsRoutes);
 
 // Ruta principal
